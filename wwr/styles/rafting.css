@@ -1,0 +1,33 @@
+:root{
+    --primary-color: #4C2B36;
+    --secondary-color: #003249;
+    --accent1-color: #419D78;
+    --accent2-color: #007EA7;
+    
+}
+h1,h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', cursive;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    position: absolute;
+}
+article {
+    position: absolute;
+    opacity: 30%;
+}
+article.hero {
+    position: relative ;
+}
+h2 {
+    position: relative;
+}
+
+p {
+    font-family: 'roboto','Times New Roman', Times, serif;
+}
