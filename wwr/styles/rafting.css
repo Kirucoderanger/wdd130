@@ -176,7 +176,7 @@ footer{
 	display: grid;
 	grid-template-columns: auto 300px;
     justify-items: right;
-	background-color: #777;
+	background-color: #9dc50d;
     padding-right: 100px;
 	
 }
