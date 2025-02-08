@@ -180,3 +180,131 @@ footer{
     padding-right: 100px;
 	
 }
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color:  #eee;
+    border: #ccc solid 1px;
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+fieldset{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+legend {
+    padding: 0.5rem;
+    font-size: 1.3em;
+    font-weight: normal;
+    color: navy;
+}
+
+label, input, select, textarea, button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+label{
+    text-align: right;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+input,select, textarea{
+    
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+ button{
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #333;
+    background-color: navy;
+    color: #fff;
+    cursor: pointer;
+ }
+
+ button:hover{
+     background: #444;
+ }
+
+ .contact footer{
+     margin:1rem auto 0;
+     width: 650px;
+     text-align: center;
+     font-size: 0.8em;
+     color: #777;
+     padding: 1rem;
+     bottom: 0;
+     border-top: 1px solid #ccc;
+ }
+
+ .form-item{
+     display: grid;
+     align-items: center;
+    
+ }
+
+ .column1{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+ }
+
+ .column2{
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+ }
+
+ .column3 label{
+    display: flex;
+        vertical-align: bottom;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+ }
+
+ textarea, input[type="text"]{
+     font-size: 1.1rem;
+     padding: 0.5rem;
+     border: 1px solid #ccc;
+     border-radius: 0.5rem;
+     width: 100%;
+ }
