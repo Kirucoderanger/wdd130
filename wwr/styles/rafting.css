@@ -84,6 +84,7 @@ header{
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	border-bottom: 1px solid #ccc;
+    background-color: #e3e4e1;
 	
 }
 
@@ -207,7 +208,16 @@ footer{
     text-align: justify;
 }
 
-
+.colltoaction  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin: auto;
+    text-align: justify;
+    width: 200px;
+    float: right;
+}
 
 
 
@@ -221,6 +231,17 @@ form{
     border: #ccc solid 1px;
     border-radius: 0.5rem;
     display: grid;
+}
+
+.newsletter form{
+    
+    width: 350px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color:  #eee;
+    border: #ccc solid 1px;
+    border-radius: 0.5rem;
+    display: grid
 }
 
 fieldset{
