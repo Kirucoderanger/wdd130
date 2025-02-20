@@ -5,6 +5,7 @@
     --accent2-color: #007EA7;
     
 }
+
 h1,h2 {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
 }
@@ -24,7 +25,8 @@ div.hero h1  {
     top: 10px;
     left: 450px;
     background-color: rgba(137, 147, 143, 0.064);
-    color: #2a1e1e;
+    color:var(--primary-color);
+    
 }
 
 
@@ -64,6 +66,7 @@ div.hero article p {
 	border: 1px solid rgb(0 0 0 / .1);
 	text-align: justify;
     color: rgb(11, 1, 1);
+    
     
     
 }
@@ -445,9 +448,9 @@ input[type="checkbox"]{
 }
 
 .tablerapid {
-    grid-column: 1/5;
+    grid-column: 1/4;
     width: 95%;
-    margin: 1rem auto;
+    margin: auto; 
     padding: 1rem;
     background-color: #e7eaeb;
     border: 1px solid #ccc;
@@ -525,6 +528,45 @@ thead > tr {
     font-weight: bold;
   }
 
+/* Call to action */
+  .button-wrapper {
+    display: block;
+    text-align: center;
+  }
 
+  .button {
+    border: none;
+    border-radius: 3em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    width: auto;
+  }
+
+  .cta-button {
+    background-color: #000;
+    color: #fff !important;
+  }
+  
+  .cta-button:hover {
+    background-color: #777;
+  }
+
+  .container3 h2 {
+    text-align: center;
+  }
+
+  .section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: #e7eaeb;
+
+  }
 
   
