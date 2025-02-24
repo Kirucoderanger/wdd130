@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text-to-Image Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        input, button { margin: 10px; padding: 10px; font-size: 16px; }
+        img { margin-top: 20px; max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h2>AI Text-to-Image Generator</h2>
+    <input type="text" id="textInput" placeholder="Enter your prompt">
+    <button onclick="generateImage()">Generate Image</button>
+    <br>
+    <img id="outputImage" style="display: none;">
+    <p id="status"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

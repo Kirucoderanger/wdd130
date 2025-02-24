@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text-to-Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input {
+            width: 60%;
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>AI Text-to-Image Generator</h2>
+    <input type="text" id="prompt" placeholder="Enter a text prompt...">
+    <button onclick="generateImage()">Generate Image</button>
+    <div id="output"></div>
+
+    <script>
+        async function generateImage() {
+            const prompt = document.getElementById("prompt").value;
+            if (!prompt) {
+                alert("Please enter a prompt!");
+                return;
+            }
+
+            const apiKey = "YOUR_OPENAI_API_KEY"; // Replace with your OpenAI API Key
+            const url = "https://api.openai.com/v1/images/generations";
+
+            document.getElementById("output").innerHTML = "<p>Generating...</p>";
+
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${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}`
+                },
+                body: JSON.stringify({
+                    prompt: prompt,
+                    n: 1,
+                    size: "1024x1024"
+                })
+            });
+
+            const data = await response.json();
+            if (data && data.data) {
+                document.getElementById("output").innerHTML = `
+                    <img src="${data.data[0].url}" alt="Generated Image">
+                `;
+            } else {
+                document.getElementById("output").innerHTML = "<p>Failed to generate image.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
